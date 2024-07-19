@@ -86,7 +86,14 @@ class _StudentViewState extends State<StudentView> {
                 ),
               ],
             ),
-            const SizedBox(height: 20),
+            Container(
+              height: 10,
+              decoration: const BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(color: Color(0xff00b35b), width: 1),
+                ),
+              ),
+            ),
             Expanded(child: _buildStudentTable()),
           ],
         ),
